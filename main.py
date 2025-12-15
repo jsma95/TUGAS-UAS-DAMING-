@@ -6,10 +6,10 @@ import joblib
 # ===============================
 # LOAD MODEL
 # ===============================
-scaler = joblib.load("model/scaler.pkl")
-kmeans = joblib.load("model/kmeans.pkl")
-logreg = joblib.load("model/logreg.pkl")
-features = joblib.load("model/features.pkl")
+scaler = joblib.load("scaler.pkl")
+kmeans = joblib.load("kmeans.pkl")
+logreg = joblib.load("logreg.pkl")
+features = joblib.load("features.pkl")
 
 # ===============================
 # STREAMLIT CONFIG
@@ -97,3 +97,4 @@ if st.button("🔍 Prediksi Cluster"):
 # ===============================
 st.markdown("---")
 st.caption("📌 Model: K-Means + Logistic Regression | Dataset Air Quality")
+
